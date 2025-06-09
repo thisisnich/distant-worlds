@@ -5,7 +5,7 @@ scientific_name: Solithar Brimshalis
 type: Dense Desert Terrestrial
 biome: Sulfuric Ravine Desert
 gravity_source: Standard planetary core with high-density mineral composition
-nickname: The Ember World, The Light Keeper
+nickname: Yellow Hell
 atmosphere_type: Dense sulfur-silicate particulate clouds with yellow-gray haze; minimal solar penetration
 primary_resources:
   - Brimshale (sulfur-silica hybrid with photoreactive properties)
