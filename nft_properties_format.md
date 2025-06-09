@@ -81,7 +81,11 @@ For bulk NFT uploads, use this CSV structure with angle increments:
 ### Headers:
 ```
 name,artist,planet,scientific_name,type,nickname,habitable,year_length,day_length,atmosphere,primary_resource,angle
+string,string,number,string,string,string,string,number,number,string,string,number
 ```
+
+### Display Types Row (Required):
+Row 2 must specify data types: "string" or "number"
 
 ### Angle Pattern:
 - 10 renders per planet
