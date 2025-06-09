@@ -72,6 +72,29 @@ PRIMARY RESOURCE: Glacial Resin
 
 ---
 
+---
+
+## CSV Upload Format
+
+For bulk NFT uploads, use this CSV structure with angle increments:
+
+### Headers:
+```
+name,artist,planet,scientific_name,type,nickname,habitable,year_length,day_length,atmosphere,primary_resource,angle
+```
+
+### Angle Pattern:
+- 10 renders per planet
+- Angles: 36°, 72°, 108°, 144°, 180°, 216°, 252°, 288°, 324°, 360°
+- Naming: [Planet Name] #01, #02, etc.
+
+### Sample CSV Row:
+```
+Solithar #01,Nick_DibZz,2,Solithar Brimshalis,Dense Desert Terrestrial,Yellow Hell,Nhyrex Only,847,19.3,Dense Sulfuric Clouds,Brimshale,36
+```
+
+---
+
 ## Notes
 
 - Keep property names consistent across all planets
@@ -80,3 +103,4 @@ PRIMARY RESOURCE: Glacial Resin
 - Habitable field can be: "Yes", "No", or "[Species] Only"
 - Atmosphere should be 2-4 words maximum
 - Primary Resource should be the most valuable/unique material
+- Each planet gets 10 renders at 36° increments starting from 36°
