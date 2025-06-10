@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distant Worlds - Procedural Planet Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header class="hero">
+            <h1 class="title">Distant Worlds</h1>
+            <p class="subtitle">Procedural Planet Collection</p>
+            <p class="tagline">Minted, not discovered.</p>
+        </header>
+
+        <section class="info-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌍 Weekly Drops</h3>
+                    <p>New procedurally generated planets every week</p>
+                </div>
+                <div class="info-card">
+                    <h3>📈 Dynamic Pricing</h3>
+                    <p>First claim sets the price, next planet costs $1 more</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎨 100% Human-Made</h3>
+                    <p>Created with Blender, no AI generation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="planets-section">
+            <h2 class="section-title">Available Worlds</h2>
+            <div id="planets-grid" class="planets-grid">
+                <!-- Planet cards will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Distant Worlds. All renders are unique digital assets.</p>
+        </footer>
+    </div>
+
+    <!-- Claim Modal -->
+    <div id="claimModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Claim Planet</h2>
+            <div class="modal-body">
+                <p id="modalDescription"></p>
+                <form id="claimForm">
+                    <div class="form-group">
+                        <label for="claimerName">Your Name:</label>
+                        <input type="text" id="claimerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="claimerEmail">Your Email:</label>
+                        <input type="email" id="claimerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="claimMessage">Message (optional):</label>
+                        <textarea id="claimMessage" rows="3" placeholder="Any specific requests or comments..."></textarea>
+                    </div>
+                    <button type="submit" class="claim-btn-modal">Claim Planet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
